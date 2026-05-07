@@ -38,5 +38,3 @@ fig = px.line(filtered_temporal, x='Tanggal', y='Nilai',
               markers=True, template='plotly_white')
 fig.update_layout(xaxis_title="Periode Waktu", yaxis_title="Nilai")
 st.plotly_chart(fig, use_container_width=True)
-
-st.info("👆 Geser slider waktu di atas untuk melihat bagaimana grafik berubah secara real-time.")
