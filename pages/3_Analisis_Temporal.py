@@ -6,7 +6,7 @@ import plotly.express as px
 st.title("Analisis Temporal (Berdasarkan Waktu)")
 
 # --- 1. Membuat Data Time Series Sampel ---
-dates = pd.date_range(start="2023-01-01", end="2023-12-31", freq='M')
+dates = pd.date_range(start="2023-01-01", end="2023-12-31", freq='ME')
 nilai = np.random.randint(50, 150, size=len(dates))
 df_temporal = pd.DataFrame({'Tanggal': dates, 'Nilai': nilai})
 
